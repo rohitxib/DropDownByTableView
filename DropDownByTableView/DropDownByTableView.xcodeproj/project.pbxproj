@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		170EA10128EFED7900ACE1C6 /* DropDownByTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 170EA10028EFED7900ACE1C6 /* DropDownByTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1791634528EFF09100117796 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1791634428EFF09100117796 /* DropDownView.swift */; };
+		1791634728EFF0D600117796 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1791634628EFF0D600117796 /* DropDownView.xib */; };
+		1791634A28EFF1B300117796 /* DropTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1791634828EFF1B300117796 /* DropTableCell.swift */; };
+		1791634B28EFF1B300117796 /* DropTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1791634928EFF1B300117796 /* DropTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170EA0FD28EFED7900ACE1C6 /* DropDownByTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropDownByTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170EA10028EFED7900ACE1C6 /* DropDownByTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownByTableView.h; sourceTree = "<group>"; };
+		1791634428EFF09100117796 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		1791634628EFF0D600117796 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		1791634828EFF1B300117796 /* DropTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropTableCell.swift; sourceTree = "<group>"; };
+		1791634928EFF1B300117796 /* DropTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,10 @@
 		170EA0F328EFED7900ACE1C6 = {
 			isa = PBXGroup;
 			children = (
+				1791634828EFF1B300117796 /* DropTableCell.swift */,
+				1791634928EFF1B300117796 /* DropTableCell.xib */,
+				1791634628EFF0D600117796 /* DropDownView.xib */,
+				1791634428EFF09100117796 /* DropDownView.swift */,
 				170EA0FF28EFED7900ACE1C6 /* DropDownByTableView */,
 				170EA0FE28EFED7900ACE1C6 /* Products */,
 			);
@@ -93,6 +105,7 @@
 				TargetAttributes = {
 					170EA0FC28EFED7900ACE1C6 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -119,6 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1791634728EFF0D600117796 /* DropDownView.xib in Resources */,
+				1791634B28EFF1B300117796 /* DropTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1791634528EFF09100117796 /* DropDownView.swift in Sources */,
+				1791634A28EFF1B300117796 /* DropTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +275,7 @@
 		170EA10528EFED7900ACE1C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +296,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +305,7 @@
 		170EA10628EFED7900ACE1C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
